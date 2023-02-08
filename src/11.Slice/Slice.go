@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	//disarankan menggunakan [...] jika panjang dari array tidak diketahui
-	var months = []string{
+	//disarankan menggunakan [...] jika [] akan dianggap slice. jika panjang dari array tidak diketahui
+	var months = [...]string{
 		"Januari", "Februari", "Maret",
 		"April", "Mei", "Juni", "Juli",
 		"Agustus", "September", "Oktober", "Novermber", "Desember",
